@@ -23,6 +23,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.7;
   color: #777;
   padding: 3rem;
@@ -41,17 +42,17 @@ body {
   position: relative;
 }
 
-.header .logo-box {
+.header .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.header .logo-box .logo {
+.header .header__logo-box .header__logo {
   height: 3.5rem;
 }
 
-.header .text-box {
+.header .header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -60,7 +61,7 @@ body {
   text-align: center;
 }
 
-.header .text-box .heading-primary {
+.header .header__text-box .heading-primary {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
@@ -68,7 +69,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.header .text-box .heading-primary .heading-primary-main {
+.header .header__text-box .heading-primary .heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -81,7 +82,7 @@ body {
           animation-timing-function: ease-out;
 }
 
-.header .text-box .heading-primary .heading-primary-sub {
+.header .header__text-box .heading-primary .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -214,7 +215,7 @@ body {
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -233,7 +234,7 @@ body {
   transition: all .4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -243,7 +244,7 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   -webkit-animation: moveInButton .5s ease-out .75s;
           animation: moveInButton .5s ease-out .75s;
   -webkit-animation-fill-mode: backwards;
